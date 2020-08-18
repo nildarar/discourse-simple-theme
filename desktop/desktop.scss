@@ -9,9 +9,6 @@
 
 .topic-list a.title:not(.badge-notification) {
     color: #3b5998;
-    font-weight: normal;
-    font-family: 'Helvetica Neue', Helvetica, Arial, Utkal, sans-serif;
-    font-size: 18px;
 }
 
 .topic-list a.title:not(.badge-notification):hover {
@@ -31,6 +28,10 @@
 .topic-list {
     td, .creator a, .editor a {
         color: #888;
+    }
+    
+    .creator a:last-child {
+        unicode-bidi: plaintext;
     }
 }
 
@@ -110,6 +111,7 @@
     }
     .poster-avatar, .poster-info {
         float: left;
+        text-align: left;
     }
 }
 
@@ -138,10 +140,6 @@ nav.post-controls button.has-like {
 .creator .badge-wrapper.bullet span.badge-category {
     color: #888 !important;
     margin-top: -2px;
-}
-
-img.avatar {
-    border-radius: 3px;
 }
 
 #suggested-topics td.main-link {
